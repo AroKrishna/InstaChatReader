@@ -1,0 +1,79 @@
+/**
+ * Responsive layout rules for tablet and mobile viewports
+ */
+
+/* Tablet Breakpoint (601px - 900px) */
+@media (max-width: 900px) {
+  :root {
+    --sidebar-width: 280px;
+    --spacing-lg: 12px;
+  }
+
+  .message-row {
+    max-width: 80%;
+  }
+
+  .brand-badge {
+    display: none; /* Hide badge text on tighter viewports */
+  }
+}
+
+/* Mobile Breakpoint (<= 600px) */
+@media (max-width: 600px) {
+  :root {
+    --header-height: 54px;
+    --spacing-lg: 12px;
+  }
+
+  .app-header {
+    padding: 0 var(--spacing-md);
+  }
+
+  .brand-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .btn-primary span {
+    display: none; /* Icon-only on mobile */
+  }
+
+  .btn-primary {
+    padding: 0 10px;
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Single-Pane Navigation Behavior */
+  #app[data-mobile-view="list"] .sidebar {
+    width: 100%;
+    border-right: none;
+    display: flex;
+  }
+
+  #app[data-mobile-view="list"] .chat-viewport {
+    display: none;
+  }
+
+  #app[data-mobile-view="chat"] .sidebar {
+    display: none;
+  }
+
+  #app[data-mobile-view="chat"] .chat-viewport {
+    width: 100%;
+    display: flex;
+  }
+
+  /* Show back button in chat header on mobile */
+  .mobile-back-btn {
+    display: inline-flex;
+  }
+
+  .message-row {
+    max-width: 88%;
+  }
+
+  .message-bubble {
+    font-size: var(--font-size-base);
+    padding: 8px 12px;
+  }
+}

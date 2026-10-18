@@ -1,0 +1,148 @@
+/**
+ * InstaChatReader Design Tokens
+ * Centralized CSS variables for Light and Dark themes
+ */
+
+:root {
+  /* Color Palette - Light Theme (Default) */
+  --bg-page: #fafafa;
+  --bg-surface: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-sidebar: #ffffff;
+  --bg-chat: #ffffff;
+  --bg-modal-backdrop: rgba(0, 0, 0, 0.65);
+  
+  --border-subtle: #dbdbdb;
+  --border-light: #efefef;
+  --border-divider: #f0f0f0;
+  
+  --text-primary: #262626;
+  --text-secondary: #737373;
+  --text-muted: #8e8e8e;
+  --text-inverse: #ffffff;
+
+  --accent-primary: #0095f6;
+  --accent-hover: #1877f2;
+  --accent-active: #0074cc;
+  --accent-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+  /* Message Bubbles */
+  --bubble-in-bg: #efefef;
+  --bubble-in-text: #262626;
+  --bubble-out-bg: #3797f0;
+  --bubble-out-text: #ffffff;
+
+  /* Overlays & States */
+  --hover-overlay: rgba(0, 0, 0, 0.04);
+  --active-overlay: rgba(0, 0, 0, 0.08);
+  --focus-ring: 0 0 0 2px rgba(0, 149, 246, 0.4);
+  --selected-item-bg: #efefef;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  /* Badges & Meta */
+  --badge-bg: #e0f1ff;
+  --badge-text: #0074cc;
+  --badge-read-only-bg: #f4f4f4;
+  --badge-read-only-text: #555555;
+  --badge-read-only-border: #d0d0d0;
+
+  --date-sep-color: #8e8e8e;
+  --date-sep-line: #e0e0e0;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.8125rem;   /* 13px */
+  --font-size-base: 0.875rem;  /* 14px */
+  --font-size-md: 0.9375rem;   /* 15px */
+  --font-size-lg: 1rem;        /* 16px */
+  --font-size-xl: 1.125rem;    /* 18px */
+  --font-size-2xl: 1.25rem;    /* 20px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-2xs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-bubble: 18px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout Dimensions */
+  --header-height: 60px;
+  --sidebar-width: 360px;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-page: #000000;
+  --bg-surface: #121212;
+  --bg-elevated: #1c1c1c;
+  --bg-sidebar: #000000;
+  --bg-chat: #000000;
+  --bg-modal-backdrop: rgba(0, 0, 0, 0.8);
+
+  --border-subtle: #262626;
+  --border-light: #1c1c1c;
+  --border-divider: #1f1f1f;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a8a8a8;
+  --text-muted: #737373;
+  --text-inverse: #000000;
+
+  --accent-primary: #0095f6;
+  --accent-hover: #3897f0;
+  --accent-active: #1877f2;
+
+  /* Message Bubbles in Dark Mode */
+  --bubble-in-bg: #262626;
+  --bubble-in-text: #f5f5f5;
+  --bubble-out-bg: #3797f0;
+  --bubble-out-text: #ffffff;
+
+  /* Overlays & States */
+  --hover-overlay: rgba(255, 255, 255, 0.06);
+  --active-overlay: rgba(255, 255, 255, 0.1);
+  --focus-ring: 0 0 0 2px rgba(56, 151, 240, 0.5);
+  --selected-item-bg: #1c1c1c;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.8);
+
+  /* Badges & Meta */
+  --badge-bg: #102a45;
+  --badge-text: #70b8ff;
+  --badge-read-only-bg: #222222;
+  --badge-read-only-text: #a0a0a0;
+  --badge-read-only-border: #333333;
+
+  --date-sep-color: #737373;
+  --date-sep-line: #262626;
+}
